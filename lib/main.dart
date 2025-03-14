@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      // use here to show the pages
       // home: const AnimatedColorPallete(),
       // home: const AnimatedCart(),
       // home: const AnimatedCircle(),
@@ -32,5 +33,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
