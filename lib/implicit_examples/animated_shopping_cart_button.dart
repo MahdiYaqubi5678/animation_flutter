@@ -7,6 +7,8 @@ class AnimatedCart extends StatefulWidget {
   State<AnimatedCart> createState() => _AnimatedCartState();
 }
 
+// a great example for ecommerce applications
+
 class _AnimatedCartState extends State<AnimatedCart> {
   bool isExpanded = false;
 
@@ -34,14 +36,16 @@ class _AnimatedCartState extends State<AnimatedCart> {
               borderRadius: BorderRadius.circular(isExpanded ? 30 : 10),
             ),
             child: Row(
-              mainAxisAlignment: isExpanded ? MainAxisAlignment.spaceEvenly : MainAxisAlignment.center,
+              mainAxisAlignment: isExpanded
+                  ? MainAxisAlignment.spaceEvenly
+                  : MainAxisAlignment.center,
               children: [
                 Icon(
                   isExpanded ? Icons.done : Icons.shopping_cart,
                   color: Colors.white,
-                ), 
+                ),
                 AnimatedOpacity(
-                  opacity: isExpanded ? 1 : 0, 
+                  opacity: isExpanded ? 1 : 0,
                   duration: const Duration(milliseconds: 750),
                   child: Text(
                     isExpanded ? "Added to Cart" : "",
